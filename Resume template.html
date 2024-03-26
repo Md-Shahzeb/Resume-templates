@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Template</title>
+  <style>
+    * {
+      padding: 0px;
+      outline: 0px;
+      margin: 0px;
+      font-family: "Poppins";
+    }
+    .resume-template {
+      display: grid;
+      grid-template-columns: 300px auto;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0px 0px 3px 1px lightgray;
+      padding: 20px;
+      column-gap: 50px;
+      border: 2px solid gray;
+    }
+    .profile-top {
+      background-color: #5271ff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .avtar {
+      width: 150px;
+      height: 150px;
+      border-radius: 75px;
+      overflow: hidden;
+    }
+    .name,
+    .title {
+      font-weight: bold;
+      color: white;
+    }
+    .links {
+      display: flex;
+      gap: 20px;
+    }
+    .links a {
+      text-decoration: none;
+    }
+    .github,
+    .linkedin {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: white;
+    }
+    .profile-bottom {
+      background-color: #3c4240;
+      color: white;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }    
+    .certificate,
+    .skills,
+    .contact {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .contact-list,
+    .skill-list,
+    .cert-list {
+      list-style-type: none;
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+    .line1 {
+      height: 2px;
+      background: white;
+    }
+    .contact-value {
+      color: gray;
+    }
+    .skill-progress {
+      height: 10px;
+    }
+    .certificate-heading,
+    .skills-heading,
+    .contact-heading {
+      display: flex;
+      gap: 8px;
+    }
+    .details {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      padding-right: 20px;
+    }    
+    .objective-heading,
+    .experience-heading,
+    .project-heading,
+    .education-heading {
+      color: #5271ff;
+    }
+    .objective-desc {
+      color: gray;
+      padding-top: 10px;
+    }
+    .job-desc,
+    .project-desc,
+    .college-name {
+      color: gray;
+      padding-left: 40px;
+    }
+    .line2 {
+      height: 2px;
+      background: black;
+    }
+    .experience,
+    .project,
+    .education {
+      padding-top: 20px;
+    }
+    .experience-list li,
+    .project-list li,
+    .education-list li {
+      list-style-type: none;
+      padding-top: 10px;
+    }
+    .role,
+    .project-name,
+    .education-date {
+      display: flex;
+      gap: 24px;
+    }
+    .company,
+    .tech-stack,
+    .education-type,
+    .college-name {
+      padding-left: 40px;
+    }
+    .role-date {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+  </head>
+  <body>
+      <main class="resume-template">
+        <!-- profile top section -->
+        <section class="profile-top">
+            <div>
+              <img class="avtar" src="avtar.png" alt="photo" />
+            </div>
+            <h1 class="name">YOUR NAME</h1>
+            <h3 class="title">TITLE</h3>
+            <div class="links">
+              <a href="#" class="github"> <img src="github.svg" alt="github"></a>
+              <a href="#" class="linkedin"> <img src="linkedin.svg" alt="github"></a>
+            </div>
+        </section>
+
+        <!-- profile bottom section -->
+        <div class="profile-bottom">
+          <!-- contact section -->
+          <section class="contact">
+            <div class="contact-heading">
+              <h2>Contact</h2>
+            </div>
+            <div class="line1"></div>
+            <ul class="contact-list">
+              <li>
+                Phone <br />
+                <span class="contact-value">XXXXXXXX37</span>
+              </li>
+              <li>
+                Email <br />
+                <span class="contact-value">mdxxxxxxx975@gmail.com</span>
+              </li>
+            </ul>
+          </section>
+
+          <!-- skill section -->
+          <section class="skills">
+            <div class="skills-heading">
+              <h2>Skills</h2>
+            </div>
+            <div class="line1"></div>
+            <ul class="skill-list">
+              <li>
+                HTML <br />
+                <progress
+                  class="skill-progress"
+                  max="100"
+                  value="80"
+                  class="progress"
+                ></progress>
+              </li>
+              <li>
+                CSS <br />
+                <progress
+                  class="skill-progress"
+                  max="100"
+                  value="70"
+                ></progress>
+              </li>
+              <li>
+          Javascript<br />
+                <progress
+                  class="skill-progress"
+                  max="100"
+                  value="60"
+                ></progress>
+              </li>
+              <li>
+               BOOTSTRAP<br />
+                <progress
+                  class="skill-progress"
+                  max="100"
+                  value="80"
+                ></progress>
+              </li>
+              <li>
+               GITHUB <br />
+                <progress
+                  class="skill-progress"
+                  max="100"
+                  value="70"
+                ></progress>
+              </li>
+              <li>
+                C PROGRAMMING
+                <br />
+                <progress
+                  class="skill-progress"
+                  max="100"
+                  value="90"
+                ></progress>
+              </li>
+              <li>
+                C++ PROGRAMMING <br />
+                <progress
+                  class="skill-progress"
+                  max="100"
+                  value="80"
+                ></progress>
+              </li>
+              <li>
+                PYTHON PROGRAMMING <br />
+                <progress
+                  class="skill-progress"
+                  max="100"
+                  value="50"
+                ></progress>
+              </li>
+            </ul>
+          </section>
+
+          <!-- certificate section-->
+          <section class="certificate">
+            <div class="certificate-heading">
+              <h2>Certificates</h2>
+              <img src="award.svg" alt="award" />
+            </div>
+
+            <div class="line1"></div>
+            <ul class="cert-list">
+              <li>Certificate Name 1</li>
+              <li>Certificate Name 2</li>
+              <li>Certificate Name 3</li>
+            </ul>
+          </section>
+        </div>
+
+        <!-- more details -->
+        <div class="details">
+          <!-- objective section -->
+          <section class="objective">
+            <h2 class="objective-heading">OBJECTIVE</h2>
+            <div class="line2"></div>
+            <p class="objective-desc">
+              Seeking to enroll in the intership program to develop my skills and learn in a professional environment and also to improve my software development knowledge and remain up to date on the latest developing trends within the industry.
+            </p>
+          </section>
+
+          <!-- work experience section -->
+          <section class="experience">
+            <h2 class="experience-heading">WORK EXPERIENCE - n YEARS</h2>
+            <div class="line2"></div>
+            <ul class="experience-list">
+              <li>
+                <div class="role-date">
+                  <div class="role">
+                    <img
+                      src="arrow-right-circle-fill.svg"
+                      alt="circle fill"
+                    />
+                    <h2>Role Name 1</h2>
+                  </div>
+                  <h3 class="date">FROM - TO</h3>
+                </div>
+                <h2 class="company">Company Name 1</h2>
+                <p class="job-desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore voluptatem nobis  
+                </p>
+              </li>
+              <li>
+                <div class="role-date">
+                  <div class="role">
+                    <img
+                    src="arrow-right-circle-fill.svg"
+                    alt="circle fill"
+                  />
+                    <h2 class="role">Role Name 2</h2>
+                  </div>
+                  <h3 class="date">FROM - TO</h3>
+                </div>
+                <h2 class="company">Company Name 2</h2>
+                <p class="job-desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore voluptatem nobi 
+                </p>
+              </li>
+              <li>
+                <div class="role-date">
+                  <div class="role">
+                    <img
+                      src="arrow-right-circle-fill.svg"
+                      alt="circle fill"
+                    />
+                    <h2 class="role">Role Name 3</h2>
+                  </div>
+                  <h3 class="date">FROM - TO</h3>
+                </div>
+                <h2 class="company">Company Name 3</h2>
+                <p class="job-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.Accusantium  
+                </p>
+              </li>
+            </ul>
+          </section>
+
+          <!-- projects section -->
+          <section class="project">
+            <h2 class="project-heading">PROJECTS</h2>
+            <div class="line2"></div>
+            <ul class="project-list">
+              <li>
+                <div class="project-name">
+                  <img
+                    src="arrow-right-circle-fill.svg"
+                    alt="circle fill"
+                  />
+                    <h3>Project Name 1</h3>
+                </div>
+                <h3 class="tech-stack">
+                  TECH STACK
+                </h3>
+                <p class="project-desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore voluptatem nobis tempore 
+                </p>
+              </li>
+              <li>
+                <div class="project-name">
+                  <img
+                    src="arrow-right-circle-fill.svg"
+                    alt="circle fill"
+                  />
+                  <h3>Project Name 2</h3>
+                </div>
+                <h3 class="tech-stack">
+                  TECH STACK
+                </h3>
+                <p class="project-desc">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore  
+                </p>
+              </li>
+            </ul>
+          </section>
+
+          <!-- education section -->
+          <section class="education">
+            <h2 class="education-heading">EDUCATION</h2>
+            <div class="line2"></div>
+            <ul class="education-list">
+              <li>
+                <div class="education-date">
+                  <img
+                  src="arrow-right-circle-fill.svg"
+                  alt="circle fill"
+                />
+                  <h3>FROM - TO</h3>
+                </div>
+                <h3 class="education-type">Education Name 1</h3>
+                <div class="college-name">College/School Name 1</div>
+              </li>
+              <li>
+                <div class="education-date">
+                  <img
+                  src="arrow-right-circle-fill.svg"
+                  alt="circle fill"
+                />
+                  <h3>FROM - TO</h3>
+                </div>
+                <h3 class="education-type">Education Name 2</h3>
+                <div class="college-name">College/School Name 2</div>
+              </li>
+          </section>
+        </div>
+      </main>
+  </body>
+</html>
